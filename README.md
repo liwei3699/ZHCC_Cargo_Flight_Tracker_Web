@@ -44,7 +44,6 @@
 ├─ tests/               # 函数、纯逻辑、Hook、组件测试
 ├─ scripts/             # 构建检查、真实源站校验、夹具生成
 ├─ schema.sql           # 两张数据库表的迁移 SQL
-├─ docs/superpowers/specs/  # 设计文档
 └─ dist/                # 构建产物，不提交
 ```
 
@@ -61,7 +60,7 @@ npm run dev
 
 仓库为精简源码，未提交 `package-lock.json`；首次 `npm install` 会生成锁文件。
 
-`npm run dev:api` 在 `127.0.0.1:8000` 启动本地 Function，默认读取 `dev/fixtures/flights.sample.json` 的 40 条裁剪数据；手动刷新会访问真实源站并更新内存快照。`npm run dev` 启动 Vite，开发服务器会把 `/functions/v1/app` 代理到本地 Function。
+`npm run dev:api` 在 `127.0.0.1:8000` 启动本地 Function，默认读取 `dev/fixtures/flights.sample.json` 的少量裁剪数据；手动刷新会访问真实源站并更新内存快照。`npm run dev` 启动 Vite，开发服务器会把 `/functions/v1/app` 代理到本地 Function。
 
 构建：
 
